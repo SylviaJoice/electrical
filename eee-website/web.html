@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Uni web design</title>
+        <link rel="stylesheet" href="style-web.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+          <section class="header">
+            <nav class="nav">
+                <a href="web.html"><img src="karunya-logo.png" alt="Logo"></a>
+                <i class="fa fa-bars" onclick="showMenu()" id="menuIcon"></i>
+                <div class="nav-links" id="navLinks">
+                   
+                   
+                    <ul>
+                        <li><a href="web.html">Home</a></li>
+                        <li><a href="web-academics.html">Academics</a></li>
+                        <li><a href="web-faculty.html">Faculty</a></li>
+                        <li><a href="web-placements.html">Placements</a></li>                        
+                        <li><a href="web-facilties.html">Facilties</a></li>
+                        <li><a href="web-awards.html">Awards</a></li>
+                     </ul>
+                </div>
+                </nav>
+                </section>
+ <div class="text-box">
+    <h1> Karunya</h1>
+    <h2>Institute of Technology and Sciences</h2>
+    
+   
+     <a href="C:\Users\URK24AI1092\Desktop\eee-website\web-about.html" class="hero-btn">About Us</a>
+ </div>
+
+    
+
+          </section>
+
+
+
+          <!--button to download brochure-->
+<div class="download-section">
+  <a href="./B.Tech - EEE Brochure 25.pdf" download class="download-btn">Download the Brochure
+   
+</a>
+
+</div>
+<section class="eee-subtopic">
+  <h2>Division of Electrical and Electronics Engineering</h2>
+</section>
+
+<!--introduction-->
+<div class="intro-section">
+  <div class="intro-box">
+    <h2>INTRODUCTION</h2>
+    <p>
+      The Division of Electrical and Electronics Engineering was established in 1994. It is well equipped with highly commendable facilities and is effectively guided by a set of devoted and diligent staff members. The Division has also signed MoA with industries like SIEMENS Centre of Excellence for "Automation and Drives" – Siemens Authorized Training Centre for the entire Southern India, supported by Siemens (German multinational conglomerate company headquartered in Munich and the largest industrial manufacturing company in Europe), SALZER Electronics Limited (which is one of the leading industries in Electrical Protection Device and Modern Sensor Manufacturing in India), SELENS Elevators Pvt. Ltd to provide Industrial Certification Training. Students are offered with innovative projects, in-plant trainings and internships through this collaboration.
+    </p>
+  </div>
+  <div class="intro-image">
+    <img src="./grad-img.jpg" alt="Students" />
+  </div>
+</div>
+
+
+
+
+ </section>
+
+
+
+
+
+   <!---JS for navbars-->      
+  <script>
+  var navLinks = document.getElementById("navLinks");
+  var menuIcon = document.getElementById("menuIcon");
+
+  function showMenu() {
+    navLinks.style.right = "0";
+    document.addEventListener("click", clickOutsideToClose); // Attach listener
+  }
+
+  function hideMenu() {
+    navLinks.style.right = "-200px";
+    document.removeEventListener("click", clickOutsideToClose); // Clean up listener
+  }
+
+  // Hide menu when any nav link is clicked
+  document.querySelectorAll(".nav-links a").forEach(link =>
+    link.addEventListener("click", hideMenu)
+  );
+
+  // Hide menu if user clicks outside the menu and icon
+  function clickOutsideToClose(e) {
+    if (!navLinks.contains(e.target) && e.target !== menuIcon) {
+      hideMenu();
+    }
+  }
+</script>
+
+
+<!--4buttons-->
+
+    
+<section class="po-overlay-container">
+  <div class="po-overlay-wrapper">
+    <img src="./kee2.jpg" alt="EEE Program Image" class="po-overlay-image" />
+
+    <div class="po-overlay-content">
+
+      <!-- Group for PEO -->
+      <div class="po-button-group">
+        <button class="po-btn" onclick="toggleContent(this)">Program Educational Overviews</button>
+        <div class="po-content">
+          <h4>Graduates of the Program</h4>
+          <ul>
+            <li>✔ PEO I: Pursue a successful career by demonstrating the knowledge acquired in Electrical Engineering.</li>
+            <li>✔ PEO II: Exhibit technical skills in solving real-world problems.</li>
+            <li>✔ PEO III: Engage in professional practice with ethical values and lifelong learning.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Group for PO -->
+      <div class="po-button-group">
+        <button class="po-btn" onclick="toggleContent(this)">Program Outcomes</button>
+        <div class="po-content">
+          <ul>
+            <li>✔ Engineering knowledge: Apply math, science, and engineering fundamentals.</li>
+            <li>✔ Problem analysis: Identify and analyze engineering problems.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Group for PSO -->
+      <div class="po-button-group">
+        <button class="po-btn" onclick="toggleContent(this)">Program Specific Outcomes</button>
+        <div class="po-content">
+          <ul>
+            <li>✔ PSO 1: Solid foundation in math and electrical engineering.</li>
+            <li>✔ PSO 2: Design and analyze electrical systems.</li>
+            <li>✔ PSO 3: Simulate machines and automation systems.</li>
+            <li>✔ PSO 4: Implement and test analog/digital systems.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Group for POA -->
+      <div class="po-button-group">
+        <button class="po-btn" onclick="toggleContent(this)">PO Attainment</button>
+        <div class="po-content">
+          <ul>
+            <li>✔ Attainment measured using assessments and project outcomes.</li>
+            <li>✔ Reviewed annually for improvement.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<script>
+  function toggleContent(button) {
+  const content = button.nextElementSibling; // the .po-content div next to the button
+
+  // Hide all other contents except the current one (optional, if you want accordion behavior)
+  const allContents = document.querySelectorAll('.po-content');
+  allContents.forEach(el => {
+    if (el !== content) {
+      el.style.display = 'none';
+    }
+  });
+
+  // Toggle display of the clicked button's content
+  if (content.style.display === 'block') {
+    content.style.display = 'none';
+  } else {
+    content.style.display = 'block';
+  }
+}
+
+</script>
+
+
+
+<!----TESTIMONY-->
+<!--testimony section-->
+
+<section class="testimonials-section">
+  <h2 class="section-title">Testimonies of Alumni</h2>
+  <div class="testimonial-grid">
+
+    <div class="testimonial-card" onclick="openModal(0)">
+      <div class="testimonial-content">
+        <img src="./alumni1.jpg" alt="Alumni 1" class="alumni-img">
+        <div class="testimonial-right">
+          <h3>Ms.Vinoliney (B.Tech EEE).</h3>
+          <p>By God’s grace and Karunya’s support, I transformed from a reluctant engineering student to a proud graduate placed at Hitachi-ABB.</p>
+          <button class="more-btn">More Details</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card" onclick="openModal(1)">
+      <div class="testimonial-content">
+        <img src="./alumni2.jpg" alt="Alumni 2" class="alumni-img">
+        <div class="testimonial-right">
+          <h3>Mr.ANURAG NANTOWAR (B. Tech(EEE))</h3>
+          <p>I thank God and Karunya for helping me become the department topper and get placed in <strong>KPIT</strong> and <strong>Infosys</strong>.
+</p>
+          <button class="more-btn">More Details</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card" onclick="openModal(2)">
+      <div class="testimonial-content">
+        <img src="./alumni3.jpg" alt="Alumni 3" class="alumni-img">
+        <div class="testimonial-right">
+          <h3>Mr.AKSHAYA ARURAJ (B. Tech(EEE))</h3>
+          <p>Grateful to Karunya for shaping my journey and helping me get placed in Accenture Pvt. Ltd.
+</p>
+          <button class="more-btn">More Details</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Modal -->
+<div id="testimonialModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h3 id="modal-name"></h3>
+    <p id="modal-detail"></p>
+  </div>
+</div>
+
+
+<script>
+const testimonials = [
+  {
+    name: "Ms.Vinoliney",
+    detail: "“This was the LORD’s doing; It is marvelous in our eyes” (Psalms 118: 23). It indeed gives me great joy in sharing the marvelous experiences I had in Karunya which has sculptured me to who I am today. I am a person from biology background who had no idea of joining Engineering. But I thank god for He chose me to be “One in a million” which I realized the very first day I joined Karuya. It was all because of the grace of God and motivation of my department staffs, a person like me who hated Engineering was able to pass out with honors. Our department is enriched with lots of facilities to explore beyond books. It was through one of the workshops offered by our department I got an opportunity to do my final year project with a professor from Israel University (Technion- Israel Institute of Technology) who is also in collaboration with Karunya University. This Project helped me explore more in the field of Power Systems and Switchgears. During my final year I got placed in “Swifterz Creative solution” Where they offered training on a Software during my course of study. The knowledge which was inculcated through this project and Software was the sole reason for my recruitment in one of the top MNCs’ Hitachi-ABB Power Grids. I truly can’t find words to thank the friendly and supportive staffs who is much concerned about the holistic development of their students. Karunya is a place which not only raises a skilled professional but also a purposeful person and a humanitarian. My period of stay in Karunya was the time I was able to know the purpose of my life. Hostel Prayers cells and Division fellowship helped me to grow in God and instilled a zeal to work and Shine for Him in every walks of my Life. I would like to encourage my juniors to grab the opportunities which lies ahead and give your best. You are in the hands of a perfect potter who is molding you into a prefect, useful vessel."
+  },
+  {
+    name: "Mr.ANURAG NANTOWAR",
+    detail: "My name is Anurag Nantowar. I have graduated from Electrical and Electronics Engineering Division in Karunya Institute of Technology and Sciences in the year 2018 (Batch of 2014-2018). Firstly, I would like to thank God for being with me throughout my whole journey of 4 years and for helping me to become department topper with a CGPA of 9.16 . I would also like to thank all my faculty members for being with us always, in all ups and downs; and also helping us to grow spiritually. The senior-junior relationship which we experience in Karunya is also very healthy and it even helps me till date. With the help of my department and the placement cell of Karunya, I have got 2 placements, one in KPIT (it’s a core company related to the field of automotive engineering) and second one in Infosys (it’s a software service provider company). The Placement coaching session provided by the University was also helpful for me to clear the aptitude round during campus placement. For clearing the technical round, my department had provided special refresher sessions to brush-up old concepts. Currently, I am working in KPIT, Bangalore. The climate and environment we have in Karunya is very beautiful. It is perfect for acquiring knowledge as well as growing spiritually."
+  },
+  {
+    name: "Mr.AKSHAYA ARURAJ.",
+    detail: "Thanks to the industry tie-ups, I got It was a great opportunity being a part of this Karunya University, an Elite Institute in the foot hills of Nilgiris. Studying in this institute has been a great time, with its immense beauty, it also has India’s best teaching faculty and labs which has helped me gain knowledge and train me well as an electrical engineer. The Institution always helps me in every possible ways to achieve my dream. Here the potential is harnessed, skills are developed, and dreams are realized. The days spend in karunya was the golden days of my life and I will remember it for rest of my life."
+  }
+];
+
+function openModal(index) {
+  document.getElementById("modal-name").textContent = testimonials[index].name;
+  document.getElementById("modal-detail").textContent = testimonials[index].detail;
+  document.getElementById("testimonialModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("testimonialModal").style.display = "none";
+}
+</script>
+
+
+<!-- Footer Section -->
+
+<footer class="footer-container">
+  <div class="footer-col logo-section">
+    <a href="file:///C:/Users/URK24AI1092/Desktop/eee-website/web.html"><img src="karunya-logo.png" alt="Karunya Logo" class="footer-logo" /></a>
+    <p><strong>Karunya</strong> Institute of Technology and Sciences</p>
+    <p class="tagline">Deemed to be University</p>
+    <div class="social-icons">
+      <a href="#"><img src="./facebook.png" alt="Facebook" /></a>
+      <a href="#"><img src="./twitter.webp" alt="Twitter" /></a>
+      <a href="#"><img src="./insta.jpg" alt="Instagram" /></a>
+      <a href="#"><img src="./yt.jpg" alt="YouTube" /></a>
+    </div>
+  </div>
+
+  <div class="footer-col">
+    <h3>Address</h3>
+    <hr />
+    <p><strong>Karunya</strong> (Deemed to be University)</p>
+    <p>Karunya Nagar, Coimbatore</p>
+    <p>Tamilnadu - 641114</p>
+    <p>Phone: 202-806-6100</p>
+    <br />
+    <p><strong>Karunya Hospitals</strong></p>
+    <p>Siruvani main Rd, Karunya Nagar, CBE - 114</p>
+    <p>Phone: 202-865-6100</p>
+  </div>
+
+  <div class="footer-col">
+    <h3>For Admission Contact</h3>
+    <hr />
+    <p><strong>Karunya</strong> (Deemed to be University)</p>
+    <p>For the Admissions Dr. J. Jayakumar,<br />Professor, Division of EEE,<br />School of E&T, Karunya Institute of Technology and Sciences,<br />Coimbatore, India - 641114</p>
+    <p>Email: jayakumar@karunya.edu</p>
+    <p>Phone No.: 0422-2614395</p>
+    <p>Mobile No.: +91 9894288068</p>
+  </div>
+</footer>
+
+
+    </body>
+</html>

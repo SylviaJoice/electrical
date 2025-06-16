@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us</title>
+        <link rel="stylesheet" href="style-about.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+          <section class="header">
+            <nav class="nav">
+                <a href="web.html"><img src="karunya-logo.png" alt="Logo"></a>
+                <i class="fa fa-bars" onclick="showMenu()" id="menuIcon"></i>
+                <div class="nav-links" id="navLinks">
+                   
+                   
+                 <ul>
+                        <li><a href="web.html">Home</a></li>
+                        <li><a href="web-academics.html">Academics</a></li>
+                        <li><a href="web-faculty.html">Faculty</a></li>
+                        <li><a href="web-placements.html">Placements</a></li>                        
+                        <li><a href="web-facilties.html">Facilties</a></li>
+                        <li><a href="web-awards.html">Awards</a></li>
+                     </ul>
+                </div>
+                
+                </nav>
+                <div class="text-box">
+    <h1> About us</h1>
+                </section>
+
+<!---JS for navbars-->      
+  <script>
+  var navLinks = document.getElementById("navLinks");
+  var menuIcon = document.getElementById("menuIcon");
+
+  function showMenu() {
+    navLinks.style.right = "0";
+    document.addEventListener("click", clickOutsideToClose); // Attach listener
+  }
+
+  function hideMenu() {
+    navLinks.style.right = "-200px";
+    document.removeEventListener("click", clickOutsideToClose); // Clean up listener
+  }
+
+  // Hide menu when any nav link is clicked
+  document.querySelectorAll(".nav-links a").forEach(link =>
+    link.addEventListener("click", hideMenu)
+  );
+
+  // Hide menu if user clicks outside the menu and icon
+  function clickOutsideToClose(e) {
+    if (!navLinks.contains(e.target) && e.target !== menuIcon) {
+      hideMenu();
+    }
+  }
+</script>
+<!-------About us content----->
+<section class="eee-subtopic">
+  <h2>Division of Electrical and Electronics Engineering</h2>
+</section>
+
+<div class="card-container">
+  <!-- Video Card -->
+  <div class="card video-card">
+    <iframe width="100%" height="315"
+      src="https://www.youtube.com/embed/h3jM6b0jGLQ"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
+
+  <!-- Text Card -->
+  <div class="card text-card">
+    <h3>Introduction</h3>
+    <p>
+    The Division of Electrical and Electronics Engineering was established in 1994. It is well equipped with highly commendable facilities and is effectively guided by a set of devoted and diligent staff members. The Division has also signed MoA with industries like SIEMENS Centre of Excellence for "Automation and Drives" – Siemens Authorized Training Centre for the entire Southern India, supported by Siemens (German multinational conglomerate company headquartered in Munich and the largest industrial manufacturing company in Europe), SALZER Electronics Limited (which is one of the leading industries in Electrical Protection Device and Modern Sensor Manufacturing in India), SELENS Elevators Pvt. Ltd to provide Industrial Certification Training. Students are offered with innovative projects, in-plant trainings and internships through this collaboration.
+    </p>
+  </div>
+</div>
+
+<!------vision & mission-->
+<section class="vision-mission-section">
+  <div class="vm-container">
+    
+    <div class="vm-box">
+      <div class="vm-header">Our Vision</div>
+      <p>
+        To produce globally competent electrical and electronics engineers for addressing the needs of humanity with ethical values.
+      </p>
+    </div>
+
+    <div class="vm-box">
+      <div class="vm-header">Our Mission</div>
+      <ul>
+        <li>To empower the students with knowledge in recent trends in Electrical and Electronics Engineering.</li>
+        <li>To impart technical skills to resolve industrial problems through innovative teaching learning practices and research.</li>
+        <li>To raise professionals, academicians, researchers and entrepreneurs with a passion for solving societal problems.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!----ready for whats next-->
+
+<section class="cta-section">
+  <div class="cta-content">
+    <h2>READY FOR WHAT'S NEXT</h2>
+    <div class="cta-buttons">
+      <a href="https://admissions.karunya.app/" class="cta-btn red">APPLY NOW</a>
+      
+      <a href="#" class="cta-btn red">EXPLORE PROGRAMS</a>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Footer Section -->
+
+<footer class="footer-container">
+  <div class="footer-col logo-section">
+    <a href="C:\Users\URK24AI1092\Desktop\eee-website\web.html"><img src="karunya-logo.png" alt="Karunya Logo" class="footer-logo" /></a>
+    <p><strong>Karunya</strong> Institute of Technology and Sciences</p>
+    <p class="tagline">Deemed to be University</p>
+    <div class="social-icons">
+      <a href="#"><img src="./facebook.png" alt="Facebook" /></a>
+      <a href="#"><img src="./twitter.webp" alt="Twitter" /></a>
+      <a href="#"><img src="./insta.jpg" alt="Instagram" /></a>
+      <a href="#"><img src="./yt.jpg" alt="YouTube" /></a>
+    </div>
+  </div>
+
+  <div class="footer-col">
+    <h3>Address</h3>
+    <hr />
+    <p><strong>Karunya</strong> (Deemed to be University)</p>
+    <p>Karunya Nagar, Coimbatore</p>
+    <p>Tamilnadu - 641114</p>
+    <p>Phone: 202-806-6100</p>
+    <br />
+    <p><strong>Karunya Hospitals</strong></p>
+    <p>Siruvani main Rd, Karunya Nagar, CBE - 114</p>
+    <p>Phone: 202-865-6100</p>
+  </div>
+
+  <div class="footer-col">
+    <h3>For Admission Contact</h3>
+    <hr />
+    <p><strong>Karunya</strong> (Deemed to be University)</p>
+    <p>For the Admissions Dr. J. Jayakumar,<br />Professor, Division of EEE,<br />School of E&T, Karunya Institute of Technology and Sciences,<br />Coimbatore, India - 641114</p>
+    <p>Email: jayakumar@karunya.edu</p>
+    <p>Phone No.: 0422-2614395</p>
+    <p>Mobile No.: +91 9894288068</p>
+  </div>
+</footer>
+
+
+    </body>
+</html>

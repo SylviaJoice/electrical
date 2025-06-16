@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Academics</title>
+        <link rel="stylesheet" href="style-about.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+          <section class="academics-header">
+            <nav class="nav">
+                <a href="web.html"><img src="karunya-logo.png" alt="Logo"></a>
+                <i class="fa fa-bars" onclick="showMenu()" id="menuIcon"></i>
+                <div class="nav-links" id="navLinks">
+                   
+               <ul>
+                        <li><a href="web.html">Home</a></li>
+                        <li><a href="web-academics.html">Academics</a></li>
+                        <li><a href="web-faculty.html">Faculty</a></li>
+                        <li><a href="web-placements.html">Placements</a></li>                        
+                        <li><a href="web-facilties.html">Facilties</a></li>
+                        <li><a href="web-awards.html">Awards</a></li>
+                     </ul>
+                </div>
+                
+                </nav>
+                <div class="text-box">
+    <h1> Academics</h1>
+                </section>
+
+                <!---JS for navbars-->      
+  <script>
+  var navLinks = document.getElementById("navLinks");
+  var menuIcon = document.getElementById("menuIcon");
+
+  function showMenu() {
+    navLinks.style.right = "0";
+    document.addEventListener("click", clickOutsideToClose); // Attach listener
+  }
+
+  function hideMenu() {
+    navLinks.style.right = "-200px";
+    document.removeEventListener("click", clickOutsideToClose); // Clean up listener
+  }
+
+  // Hide menu when any nav link is clicked
+  document.querySelectorAll(".nav-links a").forEach(link =>
+    link.addEventListener("click", hideMenu)
+  );
+
+  // Hide menu if user clicks outside the menu and icon
+  function clickOutsideToClose(e) {
+    if (!navLinks.contains(e.target) && e.target !== menuIcon) {
+      hideMenu();
+    }
+  }
+</script>
+
+<section class="academics-hero">
+  <h1>Programs Offered </h1>
+  
+</section>
+
+<section class="accordion-section">
+  <h2 class="accordion-title">Graduate Programmes</h2>
+
+  <div class="accordion">
+    <!-- B.Tech -->
+    <div class="accordion-item">
+      <button class="accordion-header" onclick="toggleAccordion(this)">B.Tech Electrical and Electronics Engineering - Full Time 4 years</button>
+      <div class="accordion-content">
+        <p>The B.Tech EEE course offers students a solid foundation in electrical systems, electronics, and control technologies. The program emphasizes hands-on learning through labs and projects, preparing students for careers in power, automation, and emerging tech industries.</p>
+      </div>
+    </div>
+
+    <!-- M.Tech -->
+    <div class="accordion-item">
+      <button class="accordion-header" onclick="toggleAccordion(this)">B.Tech Electrical and Electronics Engineering (Spl. in Artificial Intelligence and Machine Learning) - Full Time 4 years</button>
+      <div class="accordion-content">
+        <p>The B.Tech EEE (AI & ML) program combines core electrical engineering with advanced AI and machine learning concepts. It equips students to design intelligent systems, work with smart technologies, and excel in modern industries blending hardware and AI-driven solutions.</p>
+      </div>
+    </div>
+
+    <!-- MS by Research -->
+    <div class="accordion-item">
+      <button class="accordion-header" onclick="toggleAccordion(this)">B.Tech Electrical and Electronics Engineering(Spl. in Data Science)- Full Time 4 years</button>
+      <div class="accordion-content">
+        <p>The B.Tech EEE (Data Science) program integrates electrical engineering fundamentals with data-driven technologies. It prepares students to analyze complex data, develop smart solutions, and apply data science in power systems, automation, and modern electrical applications.
+
+</p>
+      </div>
+    </div>
+
+    <!-- Ph.D -->
+    <div class="accordion-item">
+      <button class="accordion-header" onclick="toggleAccordion(this)">Ph.D Electrical and Electronics Engineering - Full Time/Part Time</button>
+      <div class="accordion-content">
+        <p>The Ph.D. program in EEE offers advanced research opportunities in power systems, electronics, control, and emerging technologies. Designed for scholars aiming to contribute to academic, industrial, or societal innovation, the program supports both full-time and part-time modes with expert guidance and interdisciplinary focus.
+</p>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+function toggleAccordion(button) {
+  const content = button.nextElementSibling;
+  const allContents = document.querySelectorAll(".accordion-content");
+  const allHeaders = document.querySelectorAll(".accordion-header");
+
+  allContents.forEach((el) => {
+    if (el !== content) el.style.display = "none";
+  });
+
+  allHeaders.forEach((el) => {
+    if (el !== button) el.classList.remove("active");
+  });
+
+  if (content.style.display === "block") {
+    content.style.display = "none";
+    button.classList.remove("active");
+  } else {
+    content.style.display = "block";
+    button.classList.add("active");
+  }
+}
+</script>
+
+
+
+<section class="academics-hero">
+  <h1>Curriculum </h1>
+  
+</section>
+
+<!--curriculum design-->
+<div class="curriculum-design">
+  <div class="curriculum-box">
+    <h2>CURRICULUM DESIGN PROCESS</h2>
+    <p>
+    Curriculum Design Process is a prime process to frame a standard teaching-learning of a program. It translates the broad statements of intent into specific plans of action for the program. The main purpose of this process is to ensure that the students receive integrated, coherent learning experiences that contribute towards the professional, academic and personal learning and development. All the courses in the Electrical Engineering programme offered by Karunya Institute of Technology and Sciences are developed having relevance to local, national and global developmental needs. The electrical curriculum has 12 POs, 4 PSOs and all the Courses have Course outcomes in place.The Board of Studies of the EEE department oversees the relevancy and requirements of the courses. Every year, the courses are revised if any need revision, considering the academic trends and market or industry requirements and feedback from various stakeholders. The department has formal and informal mechanisms to obtain feedback from stakeholders through various committees, associations, organization, etc., All courses have undergone major syllabus revision incorporating major thrust areas. The ideas obtained from the various bodies are thoroughly discussed by the experts in the academic bodies and carefully incorporated in the curriculum.
+</p>
+</div>
+  <div class="curric-image">
+    <img src="./curric.jpg" alt="Students" />
+  </div>
+</div>
+<!-----program structure-->
+<section class="academics-hero">
+  <h1>PROGRAM STRUCTURE </h1>
+  
+</section>
+
+<section class="program-structure">
+    <!----first table-->
+  <h2>Electrical and Electronics Engineering - 2023 Batch</h2>
+  <h3>PROGRAMME STRUCTURE</h3>
+
+  <div class="table-container">
+    <table class="responsive-table">
+      <thead>
+        <tr>
+          <th>S. No.</th>
+          <th>Category</th>
+          <th>Credits</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Humanities and Social Sciences including Management and Entrepreneurship Courses</td><td>11</td></tr>
+        <tr><td>2</td><td>Basic Science Courses</td><td>18</td></tr>
+        <tr><td>3</td><td>Engineering Science courses including workshop, drawing, basics of electrical/mechanical/computer etc.</td><td>17</td></tr>
+        <tr><td>4</td><td>Professional Core Courses</td><td>64</td></tr>
+        <tr><td>5</td><td>Project work and internship in industry or appropriate work place/academic and research institutions in India/Abroad</td><td>14</td></tr>
+        <tr><td>6</td><td>Professional Elective Courses relevant to advanced topics in Electrical and Electronics Engineering</td><td>18</td></tr>
+        <tr><td>7</td><td>Open subjects – Electives from other technical and/or emerging areas</td><td>9</td></tr>
+        <tr><td>8</td><td>Mandatory Courses prescribed by AICTE</td><td>3</td></tr>
+        <tr><td>9</td><td>Skill based Courses</td><td>6</td></tr>
+        <tr><td>10</td><td>Online Courses</td><td>5</td></tr>
+        <tr class="total-row">
+          <td colspan="2" style="text-align: right; font-weight: bold;">Total</td>
+          <td style="font-weight: bold;">165</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+
+ <!----second table-->
+ <h2>B.Tech. Electrical and Electronics Engineering -2023 Batch</h2>
+  <h4> (Specialization in Artificial Intelligence and Data Science)</h4>
+  <h3>PROGRAMME STRUCTURE</h3>
+
+  <div class="table-container">
+    <table class="responsive-table">
+      <thead>
+        <tr>
+          <th>S. No.</th>
+          <th>Category</th>
+          <th>Credits</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Humanities and Social Sciences including Management and Entrepreneurship Courses</td><td>11</td></tr>
+        <tr><td>2</td><td>Basic Science Courses</td><td>18</td></tr>
+        <tr><td>3</td><td>Engineering Science courses including workshop, drawing, basics of electrical/mechanical/computer etc.</td><td>17</td></tr>
+        <tr><td>4</td><td>Professional Core Courses</td><td>64</td></tr>
+        <tr><td>5</td><td>Project work and internship in industry or appropriate work place/academic and research institutions in India/Abroad</td><td>14</td></tr>
+        <tr><td>6</td><td>Professional Elective Courses relevant to advanced topics in Electrical and Electronics Engineering</td><td>18</td></tr>
+        <tr><td>7</td><td>Open subjects – Electives from other technical and/or emerging areas</td><td>9</td></tr>
+        <tr><td>8</td><td>Mandatory Courses prescribed by AICTE</td><td>3</td></tr>
+        <tr><td>9</td><td>Skill based Courses</td><td>6</td></tr>
+        <tr><td>10</td><td>Online Courses</td><td>5</td></tr>
+        <tr class="total-row">
+          <td colspan="2" style="text-align: right; font-weight: bold;">Total</td>
+          <td style="font-weight: bold;">165</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+</section>
+<!------MAJOR SECTION-->
+
+<section class="major-section">
+  <h2 class="major-title">Major</h2>
+  <p class="major-subtext">A minimum of 18 credits to be opted from the following Major</p>
+  <div class="major-box">
+    <div class="major-column">
+      <p><span class="blue">1.</span> Electric Vehicles</p>
+      <p><span class="blue">2.</span> Renewable Energy</p>
+      <p><span class="blue">3.</span> Artificial Intelligence and Machine Learning</p>
+      <p><span class="blue">4.</span> Industrial Automation</p>
+    </div>
+    <div class="major-column">
+      <p><span class="blue">5.</span> Software Engineering</p>
+      <p><span class="blue">6.</span> Smart Grid</p>
+      <p><span class="blue">7.</span> Cyber Security</p>
+      <p><span class="blue">8.</span> Data Analytics</p>
+      <p><span class="blue">9.</span> Power Electronics and Drives</p>
+    
+    </div>
+  </div>
+</section>
+
+
+<!----ready for whats next-->
+
+<section class="cta-section">
+  <div class="cta-content">
+    <h2>READY FOR WHAT'S NEXT</h2>
+    <div class="cta-buttons">
+      <a href="https://admissions.karunya.app/" class="cta-btn red">APPLY NOW</a>
+      
+      
+    </div>
+  </div>
+</section>
+
+<!-- Footer Section -->
+
+<footer class="footer-container">
+  <div class="footer-col logo-section">
+    <a href="C:\Users\URK24AI1092\Desktop\eee-website\web.html"><img src="karunya-logo.png" alt="Karunya Logo" class="footer-logo" /></a>
+    <p><strong>Karunya</strong> Institute of Technology and Sciences</p>
+    <p class="tagline">Deemed to be University</p>
+    <div class="social-icons">
+      <a href="#"><img src="./facebook.png" alt="Facebook" /></a>
+      <a href="#"><img src="./twitter.webp" alt="Twitter" /></a>
+      <a href="#"><img src="./insta.jpg" alt="Instagram" /></a>
+      <a href="#"><img src="./yt.jpg" alt="YouTube" /></a>
+    </div>
+  </div>
+
+  <div class="footer-col">
+    <h3>Address</h3>
+    <hr />
+    <p><strong>Karunya</strong> (Deemed to be University)</p>
+    <p>Karunya Nagar, Coimbatore</p>
+    <p>Tamilnadu - 641114</p>
+    <p>Phone: 202-806-6100</p>
+    <br />
+    <p><strong>Karunya Hospitals</strong></p>
+    <p>Siruvani main Rd, Karunya Nagar, CBE - 114</p>
+    <p>Phone: 202-865-6100</p>
+  </div>
+
+  <div class="footer-col">
+    <h3>For Admission Contact</h3>
+    <hr />
+    <p><strong>Karunya</strong> (Deemed to be University)</p>
+    <p>For the Admissions Dr. J. Jayakumar,<br />Professor, Division of EEE,<br />School of E&T, Karunya Institute of Technology and Sciences,<br />Coimbatore, India - 641114</p>
+    <p>Email: jayakumar@karunya.edu</p>
+    <p>Phone No.: 0422-2614395</p>
+    <p>Mobile No.: +91 9894288068</p>
+  </div>
+</footer>
+
+
+    </body>
+</html>

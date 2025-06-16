@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Awards</title>
+        <link rel="stylesheet" href="style-about.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+          <section class="awards-header">
+            <nav class="nav">
+                <a href="web.html"><img src="karunya-logo.png" alt="Logo"></a>
+                <i class="fa fa-bars" onclick="showMenu()" id="menuIcon"></i>
+                <div class="nav-links" id="navLinks">
+                   
+                   
+                    <ul>
+                        <li><a href="web.html">Home</a></li>
+                        <li><a href="web-academics.html">Academics</a></li>
+                        <li><a href="web-faculty.html">Faculty</a></li>
+                        <li><a href="web-placements.html">Placements</a></li>                        
+                        <li><a href="web-facilties.html">Facilties</a></li>
+                        <li><a href="web-awards.html">Awards</a></li>
+                     </ul>
+                </div>
+                
+                </nav>
+                <div class="text-box">
+    <h1> Awards</h1>
+                </section>
+
+                <!---JS for navbars-->      
+  <script>
+  var navLinks = document.getElementById("navLinks");
+  var menuIcon = document.getElementById("menuIcon");
+
+  function showMenu() {
+    navLinks.style.right = "0";
+    document.addEventListener("click", clickOutsideToClose); // Attach listener
+  }
+
+  function hideMenu() {
+    navLinks.style.right = "-200px";
+    document.removeEventListener("click", clickOutsideToClose); // Clean up listener
+  }
+
+  // Hide menu when any nav link is clicked
+  document.querySelectorAll(".nav-links a").forEach(link =>
+    link.addEventListener("click", hideMenu)
+  );
+
+  // Hide menu if user clicks outside the menu and icon
+  function clickOutsideToClose(e) {
+    if (!navLinks.contains(e.target) && e.target !== menuIcon) {
+      hideMenu();
+    }
+  }
+</script>
+
+
+        <!-- OUR FACULTY SECTION START -->
+<section class="awards-hero">
+  
+  <h4>
+    Awards & Recognition
+    </h4>
+<h3>Celebrating our achievements in academic excellence, research innovation, and social impact</h3>
+  
+</section>
+
+<!----highlights-->
+<section class="highlights-section">
+  <h2 class="highlight-title">Recent Highlights</h2>
+  <p class="highlight-subtitle">Our latest achievements and milestones</p>
+
+  <div class="highlight-cards">
+    <div class="highlight-card">
+      <div class="highlight-tag">Industry</div>
+      <div class="highlight-year">2025</div>
+      <h3 class="highlight-heading">First International Conference on Computer Vision & IoT (ICCVIoT ’23)</h3>
+      <p class="highlight-desc">Hosted global researchers presenting cutting-edge work in computer vision and IoT</p>
+    </div>
+    
+    <div class="highlight-card">
+      <div class="highlight-tag">Expo</div>
+      <div class="highlight-year">2025</div>
+      <h3 class="highlight-heading">Mindkraft 2024 Tech Expo</h3>
+      <p class="highlight-desc">Demonstrated practical innovation and interdisciplinary project excellence among students</p>
+    </div>
+
+    <div class="highlight-card">
+      <div class="highlight-tag">Partnership</div>
+      <div class="highlight-year">2025</div>
+      <h3 class="highlight-heading">Partnership with 18 American Universities</h3>
+      <p class="highlight-desc">Karunya has partnered with 18 U.S. universities for research in AI, IoT, ML, quantum computing, and EV technology.</p>
+    </div>
+  </div>
+</section>
+
+<!---academic excellence-->
+<section class="excellence-section">
+  <div class="section-header">
+    <span class="section-icon">🏆</span>
+    <h2 class="section-title">Academic Excellence</h2>
+  </div>
+
+  <div class="excellence-cards">
+    <!-- Card 1 -->
+    <div class="excellence-card">
+      <div class="card-header">
+        <div class="card-icon">🔖</div>
+        <div class="card-year">2023</div>
+      </div>
+      <h3 class="card-title">NAAC A++ Grade</h3>
+      <p class="card-text">Accredited with highest grade by National Assessment and Accreditation Council</p>
+      <hr>
+      <p class="card-impact"><strong>Impact:</strong> <br><span>University-wide recognition for academic excellence</span></p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="excellence-card">
+      <div class="card-header">
+        <div class="card-icon">🔖</div>
+        <div class="card-year">2022</div>
+      </div>
+      <h3 class="card-title">Top Private University in Tamil Nadu</h3>
+      <p class="card-text">Ranked by Education World for excellence in education and infrastructure</p>
+      <hr>
+      <p class="card-impact"><strong>Impact:</strong> <br><span>State-level recognition for academic leadership</span></p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="excellence-card">
+      <div class="card-header">
+        <div class="card-icon">🔖</div>
+        <div class="card-year">2023</div>
+      </div>
+      <h3 class="card-title">QS World University Rankings</h3>
+      <p class="card-text">Featured in QS Asia University Rankings</p>
+      <hr>
+      <p class="card-impact"><strong>Impact:</strong> <br><span>International recognition and visibility</span></p>
+    </div>
+  </div>
+</section>
+
+<!----research & innovation -->
+<section class="research-section">
+  <div class="section-header research-header">
+    <span class="section-icon">⭐</span>
+    <h2 class="section-title">Research & Innovation</h2>
+  </div>
+
+  <div class="research-cards">
+    <!-- Card 1 -->
+    <div class="research-card">
+      <div class="card-header">
+        <div class="card-icon blue">🔖</div>
+        <div class="card-year">2018–2019</div>
+      </div>
+      <h3 class="card-title">NPTEL Certificate - Deep Learning</h3>
+      <p class="card-text">Dr. A. Immanuel Selvakumar completed NPTEL’s Deep Learning course</p>
+      <hr>
+      <p class="card-impact"><strong>Impact:</strong><br><span>Certified expertise in advanced AI education</span></p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="research-card">
+      <div class="card-header">
+        <div class="card-icon blue">🔖</div>
+        <div class="card-year">2017–2023</div>
+      </div>
+      <h3 class="card-title">International Journal Reviewer</h3>
+      <p class="card-text">Faculty served as reviewers for IEEE, Elsevier & Solar Energy journals</p>
+      <hr>
+      <p class="card-impact"><strong>Impact:</strong><br><span>Contribution to global research review and standards</span></p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="research-card">
+      <div class="card-header">
+        <div class="card-icon blue">🔖</div>
+        <div class="card-year">2016–2017</div>
+      </div>
+      <h3 class="card-title">Research Grant Award</h3>
+      <p class="card-text">Dr. J. Jayakumar received funding from Tamil Nadu Science & Tech Council</p>
+      <hr>
+      <p class="card-impact"><strong>Impact:</strong><br><span>Funding support for renewable energy research</span></p>
+    </div>
+  </div>
+</section>
+
+<!---student achievement-->
+
+  <section class="student-section">
+    <div class="section-header">
+      <span class="section-icon">🎓</span>
+      <h2 class="section-title">Student Achievement</h2>
+    </div>
+
+    <div class="research-cards">
+      <!-- Card 1 -->
+      <div class="research-card">
+        <div class="card-header">
+          <div class="card-icon green">🔖</div>
+          <div class="card-year">2016–2017</div>
+        </div>
+        <h3 class="card-title">NPTEL Elite Certificate - DSP</h3>
+        <p class="card-text">P. Nagabhushanam awarded Elite certification for Discrete Time Signal Processing</p>
+        <hr>
+        <p class="card-impact"><strong>Impact:</strong><br><span>Excellence in technical skill development and self-learning</span></p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="research-card">
+        <div class="card-header">
+          <div class="card-icon green">🔖</div>
+          <div class="card-year">2017–2018</div>
+        </div>
+        <h3 class="card-title">Project Expo Winner</h3>
+        <p class="card-text">Student teams secured top ranks at Karunya Project Expo ‘18 judged by EEE faculty</p>
+        <hr>
+        <p class="card-impact"><strong>Impact:</strong><br><span>Recognition for hands-on innovation and creativity</span></p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="research-card">
+        <div class="card-header">
+          <div class="card-icon green">🔖</div>
+          <div class="card-year">2019–2020</div>
+        </div>
+        <h3 class="card-title">Smart India Hackathon Finalist</h3>
+        <p class="card-text">Karunya students reached finals of the Smart India Hackathon</p>
+        <hr>
+        <p class="card-impact"><strong>Impact:</strong><br><span>Boosted innovation, team skills, and national visibility</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Award Statistics Section ================= -->
+<section class="award-stats-section">
+  <div class="award-stats-header">
+    <h2>Award Statistics</h2>
+    <p>Numbers that showcase our commitment to excellence</p>
+  </div>
+  <div class="award-stats-cards">
+    <div class="award-card yellow">
+      <h3>65+</h3>
+      <p>Total Recognitions</p>
+    </div>
+    <div class="award-card blue">
+      <h3>20+</h3>
+      <p>National Awards</p>
+    </div>
+    <div class="award-card green">
+      <h3>10+</h3>
+      <p>International Honors</p>
+    </div>
+    <div class="award-card purple">
+      <h3>30+</h3>
+      <p>Research Contributions</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Call to Action Section ================= -->
+<section class="join-us">
+    <div class="join-us-overlay">
+  <div class="join-us-content">
+    <h2>Be Part of Our Success Story</h2>
+    <p>Join us in our journey of excellence and make your mark in the world of education and innovation</p>
+    <div class="join-us-buttons">
+      <a href="https://admissions.karunya.app/" class="btn-primary">Apply Now</a>
+      <a href="file:///C:/Users/URK24AI1092/Desktop/eee-website/web.html" class="btn-outline">Learn More</a>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer Section -->
+
+<footer class="footer-container">
+  <div class="footer-col logo-section">
+    <a href="C:\Users\URK24AI1092\Desktop\eee-website\web.html"><img src="karunya-logo.png" alt="Karunya Logo" class="footer-logo" /></a>
+    <p><strong>Karunya</strong> Institute of Technology and Sciences</p>
+    <p class="tagline">Deemed to be University</p>
+    <div class="social-icons">
+      <a href="#"><img src="./facebook.png" alt="Facebook" /></a>
+      <a href="#"><img src="./twitter.webp" alt="Twitter" /></a>
+      <a href="#"><img src="./insta.jpg" alt="Instagram" /></a>
+      <a href="#"><img src="./yt.jpg" alt="YouTube" /></a>
+    </div>
+  </div>
+
+  <div class="footer-col">
+    <h3>Address</h3>
+    <hr />
+    <p><strong>Karunya</strong> (Deemed to be University)</p>
+    <p>Karunya Nagar, Coimbatore</p>
+    <p>Tamilnadu - 641114</p>
+    <p>Phone: 202-806-6100</p>
+    <br />
+    <p><strong>Karunya Hospitals</strong></p>
+    <p>Siruvani main Rd, Karunya Nagar, CBE - 114</p>
+    <p>Phone: 202-865-6100</p>
+  </div>
+
+  <div class="footer-col">
+    <h3>For Admission Contact</h3>
+    <hr />
+    <p><strong>Karunya</strong> (Deemed to be University)</p>
+    <p>For the Admissions Dr. J. Jayakumar,<br />Professor, Division of EEE,<br />School of E&T, Karunya Institute of Technology and Sciences,<br />Coimbatore, India - 641114</p>
+    <p>Email: jayakumar@karunya.edu</p>
+    <p>Phone No.: 0422-2614395</p>
+    <p>Mobile No.: +91 9894288068</p>
+  </div>
+</footer>
+
+
+    </body>
+</html>
